@@ -1,0 +1,66 @@
+#CREATE BY THE_NEW_CONDOR
+
+
+#IMPORTANDO MODULOS
+import os   
+
+
+#CALULADORA
+print("----------Calculadora------------")
+na=input("HOLA BUENAS PODRIA DECIRME SU NOMBRE:")
+#BORRANDO PLANTILLA
+os.system("clear")
+
+#OPCIONES DE CALCULO
+print("OPCIONES:")
+print("1)sumar")
+print("2)restar")
+print("3)dividir")
+print("4)multiplicar")
+print("5)exponensiacion")
+
+op=int(input("ELIGE LA OPCION:"))
+
+#BORRANDO PLANTILLA
+os.system("clear")
+
+#COMPROBANDO Q EL VALOR ELEGIDO COINCIDA CON LA LISTA
+if op <= 5:
+   print("MUY BIEN",na,"AHORA POR FAVOR SELECCIONE  LOS NUMEROS")
+ 
+else:
+   print("LO SENTIMOS EL",op,"NO ES UN NUMERO VALIDO")
+   
+#ELIGIENDO NUMEROS
+if op <= 5:   
+   n1= int(input("PRIMER NUMERO:"))
+   n2= int(input("SEGUNDO NUMERO:"));
+   
+#BORRANDO PLANTILLA   
+os.system("clear")   
+
+#SUMA
+if op == 1:
+   print("SU RESULTADO ES",n1+n2)
+   print("VUELVA PRONTO...")
+   
+#RESTA  
+if op == 2:
+   print("SU RESULTADO ES",n1-n2)
+   print("VUELVA PRONTO...")
+   
+#DIVISION
+if op == 3:
+   print("SU RESULTADO ES",n1/n2)
+   print("VUELVA PRONTO...")
+   
+#MULTIPLICACION
+if op == 4:
+   print("SU RESULTADO ES",n1*n2)
+   print("VUELVA PRONTO...")
+   
+#EXPONENCIACION   
+if op == 5:
+   print("SU RESULTADO ES",n1**n2)
+   print("VUELVA PRONTO...")
+
